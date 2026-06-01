@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Makmur Bekleding</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+Makmur Bekleding
+</div>
+
+<div class="menu">
+<a href="#sarung">Sarung Jok</a>
+<a href="#jokpaten">Jok Paten</a>
+<a href="#kontak">Hubungi Kami</a>
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Makmur Bekleding</h1>
+
+<p>
+Spesialis Sarung Jok & Jok Paten Mobil dan Bus
+</p>
+
+<a href="#sarung" class="btn">
+Lihat Produk
+</a>
+
+</div>
+
+</section>
+
+<section id="sarung" class="section">
+
+<h2>Sarung Jok</h2>
+
+<div class="grid" id="sarung-list"></div>
+
+</section>
+
+<section id="jokpaten" class="section">
+
+<h2>Jok Paten</h2>
+
+<div class="grid" id="jokpaten-list"></div>
+
+</section>
+
+<section id="kontak" class="section">
+
+<h2>Hubungi Kami</h2>
+
+<p>WhatsApp : 08xxxxxxxxxx</p>
+
+</section>
+
+<footer>
+
+© 2025 Makmur Bekleding
+
+</footer>
+
+<script src="products.js"></script>
+
+<script>
+
+const sarung = document.getElementById("sarung-list");
+const paten = document.getElementById("jokpaten-list");
+
+products.forEach(item=>{
+
+const card = `
+<div class="card">
+
+<img src="${item.gambar}">
+
+<div class="card-body">
+
+<h3>${item.nama}</h3>
+
+<p class="price">${item.harga}</p>
+
+<a
+href="detail.html?id=${item.id}"
+class="detail-btn">
+
+Lihat Detail
+
+</a>
+
+</div>
+
+</div>
+`;
+
+if(item.kategori==="Sarung Jok"){
+sarung.innerHTML += card;
+}else{
+paten.innerHTML += card;
+}
+
+});
+
+</script>
+
+</body>
+</html>
