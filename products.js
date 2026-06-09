@@ -5,7 +5,7 @@ id:"sarung-avanza",
 nama:"Sarung Jok Avanza",
 kategori:"Sarung Jok",
 harga:"Rp1.500.000",
-gambar:"img/sarungjokmobile.jpeg",
+gambar:"sarungjokmobile.jpeg",
 deskripsi:"Sarung jok custom premium untuk Toyota Avanza dengan bahan berkualitas tinggi dan jahitan rapi."
 },
 
