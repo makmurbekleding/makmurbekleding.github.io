@@ -158,13 +158,14 @@ const id = params.get("id");
 
 const produk = products.find(item => item.id === id);
 
+console.log(produk);
+
 document.getElementById("nama").innerHTML = produk.nama;
-
 document.getElementById("harga").innerHTML = produk.harga;
-
 document.getElementById("deskripsi").innerHTML = produk.deskripsi;
-
 document.getElementById("gambar").src = produk.gambar;
+
+console.log(document.getElementById("gambar").src);
 
 document.getElementById("wa").href =
 "https://wa.me/6281234567890?text=Saya ingin memesan " + produk.nama;
