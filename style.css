@@ -554,11 +554,27 @@ footer{
 }
 /* ===== ABOUT MODERN (TAMBAHAN BARU) ===== */
 
-.about-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-    margin-top:30px;
+.about-grid {
+    display: flex;
+    flex-direction: row;   /* Memaksa isi berdampingan ke samping */
+    flex-wrap: nowrap;     /* Anti-turun ke bawah, wajib satu baris */
+    gap: 25px;
+    margin-top: 30px;
+    align-items: stretch;   /* Membuat semua card tingginya otomatis sama rata kesamping */
+    overflow-x: auto;      /* Biar kalau dibuka di HP tetap rapi dan bisa di-scroll ke samping */
+}
+
+/* Tambahkan baris flex ini di dalam .about-card kamu */
+.about-card {
+    flex: 1;               /* Membagi lebar 3 card secara adil dan rata kesamping */
+    min-width: 300px;      /* Lebar minimal tiap card agar teksnya tidak gepeng */
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
 }
 
 .about-card{
