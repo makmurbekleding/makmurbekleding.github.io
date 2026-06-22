@@ -14,7 +14,7 @@ id:"sarung-xenia",
 nama:"Sarung Jok Xenia",
 kategori:"Sarung Jok",
 harga:"Rp1.500.000",
-gambar:"xenia.jpg",
+gambar:"Xenia.jpg",
 deskripsi:"Sarung jok custom premium untuk Daihatsu Xenia."
 },
 
@@ -31,7 +31,7 @@ id:"sarung-innova",
 nama:"Sarung Jok Innova",
 kategori:"Sarung Jok",
 harga:"Rp1.800.000",
-gambar:"img/sarung-innova.jpg",
+gambar:"innova.jpeg",
 deskripsi:"Sarung jok premium untuk Toyota Innova."
 },
 
