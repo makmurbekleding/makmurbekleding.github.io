@@ -14,7 +14,7 @@ id:"sarung-xenia",
 nama:"Sarung Jok Xenia",
 kategori:"Sarung Jok",
 harga:"Rp1.500.000",
-gambar:"Xenia.jpeg",
+gambar:"xenia.jpg",
 deskripsi:"Sarung jok custom premium untuk Daihatsu Xenia."
 },
 
