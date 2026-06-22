@@ -4,7 +4,7 @@ const products = [
 id:"sarung-avanza",
 nama:"Sarung Jok Avanza",
 kategori:"Sarung Jok",
-harga:"Rp1.500.000",
+harga:"Rp3.500.000",
 gambar:"avanza.jpg",
 deskripsi:"Sarung jok custom premium untuk Toyota Avanza dengan bahan berkualitas tinggi dan jahitan rapi."
 },
@@ -13,7 +13,7 @@ deskripsi:"Sarung jok custom premium untuk Toyota Avanza dengan bahan berkualita
 id:"sarung-xenia",
 nama:"Sarung Jok Xenia",
 kategori:"Sarung Jok",
-harga:"Rp1.500.000",
+harga:"Rp4.500.000",
 gambar:"Xenia.jpg",
 deskripsi:"Sarung jok custom premium untuk Daihatsu Xenia."
 },
@@ -22,7 +22,7 @@ deskripsi:"Sarung jok custom premium untuk Daihatsu Xenia."
 id:"sarung-brio",
 nama:"Sarung Jok Brio",
 kategori:"Sarung Jok",
-harga:"Rp1.400.000",
+harga:"Rp3.800.000",
 gambar:"berbie.jpeg",
 deskripsi:"Sarung jok premium untuk Honda Brio."
 },
@@ -30,7 +30,7 @@ deskripsi:"Sarung jok premium untuk Honda Brio."
 id:"sarung-innova",
 nama:"Sarung Jok Innova",
 kategori:"Sarung Jok",
-harga:"Rp1.800.000",
+harga:"Rp4.000.000",
 gambar:"innova.jpeg",
 deskripsi:"Sarung jok premium untuk Toyota Innova."
 },
@@ -57,8 +57,8 @@ deskripsi:"Sarung jok premium untuk Mitsubishi Pajero."
 id:"jokpaten-avanza",
 nama:"Jok Paten Avanza",
 kategori:"Jok Paten",
-harga:"Rp3.500.000",
-gambar:"img/jokpaten-avanza.jpg",
+harga:"Rp4.300.000",
+gambar:"jokpatenav.jpeg",
 deskripsi:"Jok paten custom premium untuk Avanza."
 },
 
@@ -112,7 +112,7 @@ id:"jokpaten-bus",
 nama:"Jok Paten Bus",
 kategori:"Jok Paten",
 harga:"Rp12.000.000",
-gambar:"img/jokpaten-bus.jpg",
+gambar:"bus.jpeg",
 deskripsi:"Jok paten premium untuk Bus Pariwisata dan AKAP."
 }
 
