@@ -5,7 +5,7 @@ id:"sarung-avanza",
 nama:"Sarung Jok Avanza",
 kategori:"Sarung Jok",
 harga:"Rp1.500.000",
-gambar:"sarungjokmobile.jpeg",
+gambar:"avanza.jpg",
 deskripsi:"Sarung jok custom premium untuk Toyota Avanza dengan bahan berkualitas tinggi dan jahitan rapi."
 },
 
@@ -14,7 +14,7 @@ id:"sarung-xenia",
 nama:"Sarung Jok Xenia",
 kategori:"Sarung Jok",
 harga:"Rp1.500.000",
-gambar:"img/sarung-xenia.jpg",
+gambar:"Xenia.jpg",
 deskripsi:"Sarung jok custom premium untuk Daihatsu Xenia."
 },
 
@@ -23,7 +23,7 @@ id:"sarung-brio",
 nama:"Sarung Jok Brio",
 kategori:"Sarung Jok",
 harga:"Rp1.400.000",
-gambar:"img/sarung-brio.jpg",
+gambar:"pnk.jpg",
 deskripsi:"Sarung jok premium untuk Honda Brio."
 },
 
