@@ -176,45 +176,87 @@ body{
     background:white;
 }
 
-/* TENTANG */
+<section id="tentang" class="section">
+    <div class="container">
 
-#tentang p{
-    text-align:center;
-    max-width:800px;
-    margin:auto;
-    font-size:18px;
-}
+        <h2>Tentang Kami</h2>
 
-/* LAYANAN */
+        <div class="about-grid">
 
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
+            <div class="about-card">
+                <div class="card-icon"><i class="fas fa-building"></i></div>
+                <h3>Profil Perusahaan</h3>
+                <p>
+                    Makmur Bekleding merupakan usaha yang bergerak di bidang interior dan pelapisan jok kendaraan di Kota Tangerang. Didirikan oleh Bapak Ilul Anwar pada tahun 2014, usaha ini berkomitmen memberikan pelayanan serta kualitas terbaik kepada setiap pelanggan.
+                </p>
+                <p>
+                    Nama “Makmur” diambil dari harapan keluarga agar usaha ini selalu berkembang, membawa keberkahan, dan sejahtera di masa mendatang. Memulai perjalanan dari tempat sederhana di Cikokol, kini Makmur Bekleding telah mendapatkan kepercayaan dari berbagai showroom kendaraan di Kota Tangerang berkat ketelitian dan konsistensi kualitas pengerjaannya.
+                </p>
+            </div>
 
-.service-card{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    transition:.3s;
-}
+            <div class="about-card">
+                <div class="card-icon"><i class="fas fa-tools"></i></div>
+                <h3>Layanan Utama</h3>
+                <ul class="about-list">
+                    <li><i class="fas fa-check"></i> Jok Mobil & Jok Paten</li>
+                    <li><i class="fas fa-check"></i> Jok Bus & Karpet Dasar</li>
+                    <li><i class="fas fa-check"></i> Door Trim & Plafon</li>
+                    <li><i class="fas fa-check"></i> Pintu & Kap Jok Mobil</li>
+                    <li><i class="fas fa-check"></i> Reparasi Kursi Tamu</li>
+                </ul>
+            </div>
 
-.service-card:hover{
-    transform:translateY(-8px);
-}
+            <div class="about-card">
+                <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Visi & Misi</h3>
+                <div class="vismis-box">
+                    <span class="badge">Visi</span>
+                    <p>Menjadi penyedia interior kendaraan berkualitas, inovatif, terpercaya, dan menjadi pilihan utama pelanggan.</p>
+                    
+                    <span class="badge">Misi</span>
+                    <p>Menyediakan produk premium dengan standar pengerjaan tinggi, menggunakan bahan baku berkualitas, serta memberikan pelayanan profesional yang responsif.</p>
+                </div>
+            </div>
 
-.service-card i{
-    font-size:45px;
-    color:#d4af37;
-    margin-bottom:15px;
-}
+        </div>
+    </div>
+</section>
 
-.service-card h3{
-    margin-bottom:10px;
-}
+<section id="layanan" class="section bg-light">
+    <div class="container">
+
+        <h2>Layanan Kami</h2>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <i class="fas fa-car"></i>
+                <h3>Sarung Jok</h3>
+                <p>Sarung jok custom berbagai tipe kendaraan dengan presisi tinggi.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-couch"></i>
+                <h3>Jok Paten</h3>
+                <p>Jok paten premium dengan desain eksklusif dan bahan bergaransi.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-bus"></i>
+                <h3>Interior Bus</h3>
+                <p>Pengerjaan interior bus pariwisata, AKAP, dan kendaraan besar.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-layer-group"></i>
+                <h3>Karpet Dasar</h3>
+                <p>Pemasangan karpet dasar premium untuk peredam dan estetika.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
 /* PRODUK */
 
