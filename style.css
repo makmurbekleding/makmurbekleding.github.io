@@ -176,86 +176,184 @@ body{
     background:white;
 }
 
-<section id="tentang" class="section">
-    <div class="container">
+/* CONTAINER UTAMA */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        <h2>Tentang Kami</h2>
+.section {
+    padding: 80px 0;
+}
 
-        <div class="about-grid">
+.bg-light {
+    background-color: #f8f9fa;
+}
 
-            <div class="about-card">
-                <div class="card-icon"><i class="fas fa-building"></i></div>
-                <h3>Profil Perusahaan</h3>
-                <p>
-                    Makmur Bekleding merupakan usaha yang bergerak di bidang interior dan pelapisan jok kendaraan di Kota Tangerang. Didirikan oleh Bapak Ilul Anwar pada tahun 2014, usaha ini berkomitmen memberikan pelayanan serta kualitas terbaik kepada setiap pelanggan.
-                </p>
-                <p>
-                    Nama “Makmur” diambil dari harapan keluarga agar usaha ini selalu berkembang, membawa keberkahan, dan sejahtera di masa mendatang. Memulai perjalanan dari tempat sederhana di Cikokol, kini Makmur Bekleding telah mendapatkan kepercayaan dari berbagai showroom kendaraan di Kota Tangerang berkat ketelitian dan konsistensi kualitas pengerjaannya.
-                </p>
-            </div>
+/* JUDUL UTAMA SECTION */
+#tentang h2, #layanan h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
 
-            <div class="about-card">
-                <div class="card-icon"><i class="fas fa-tools"></i></div>
-                <h3>Layanan Utama</h3>
-                <ul class="about-list">
-                    <li><i class="fas fa-check"></i> Jok Mobil & Jok Paten</li>
-                    <li><i class="fas fa-check"></i> Jok Bus & Karpet Dasar</li>
-                    <li><i class="fas fa-check"></i> Door Trim & Plafon</li>
-                    <li><i class="fas fa-check"></i> Pintu & Kap Jok Mobil</li>
-                    <li><i class="fas fa-check"></i> Reparasi Kursi Tamu</li>
-                </ul>
-            </div>
+#tentang h2::after, #layanan h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #d4af37; /* Warna Emas */
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
 
-            <div class="about-card">
-                <div class="card-icon"><i class="fas fa-bullseye"></i></div>
-                <h3>Visi & Misi</h3>
-                <div class="vismis-box">
-                    <span class="badge">Visi</span>
-                    <p>Menjadi penyedia interior kendaraan berkualitas, inovatif, terpercaya, dan menjadi pilihan utama pelanggan.</p>
-                    
-                    <span class="badge">Misi</span>
-                    <p>Menyediakan produk premium dengan standar pengerjaan tinggi, menggunakan bahan baku berkualitas, serta memberikan pelayanan profesional yang responsif.</p>
-                </div>
-            </div>
+/* ==========================================
+   TENTANG KAMI - GRID SYSTEM & CARD
+   ========================================== */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: stretch; /* MEMBUAT CARD SAMA TINGGI KE SAMPING */
+}
 
-        </div>
-    </div>
-</section>
+.about-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: left; /* Teks rata kiri agar formal */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border-top: 4px solid #d4af37; /* Aksen Emas Atas */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
 
-<section id="layanan" class="section bg-light">
-    <div class="container">
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.12);
+}
 
-        <h2>Layanan Kami</h2>
+.about-card h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
 
-        <div class="service-grid">
+.about-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
 
-            <div class="service-card">
-                <i class="fas fa-car"></i>
-                <h3>Sarung Jok</h3>
-                <p>Sarung jok custom berbagai tipe kendaraan dengan presisi tinggi.</p>
-            </div>
+.about-card p:last-child {
+    margin-bottom: 0;
+}
 
-            <div class="service-card">
-                <i class="fas fa-couch"></i>
-                <h3>Jok Paten</h3>
-                <p>Jok paten premium dengan desain eksklusif dan bahan bergaransi.</p>
-            </div>
+/* Ikon Bulat Emas */
+.card-icon {
+    margin-bottom: 20px;
+}
 
-            <div class="service-card">
-                <i class="fas fa-bus"></i>
-                <h3>Interior Bus</h3>
-                <p>Pengerjaan interior bus pariwisata, AKAP, dan kendaraan besar.</p>
-            </div>
+.card-icon i {
+    font-size: 24px;
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.08);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-            <div class="service-card">
-                <i class="fas fa-layer-group"></i>
-                <h3>Karpet Dasar</h3>
-                <p>Pemasangan karpet dasar premium untuk peredam dan estetika.</p>
-            </div>
+/* Desain List Layanan */
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-        </div>
+.about-list li {
+    font-size: 15px;
+    color: #444;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+}
 
-    </div>
+.about-list li:last-child {
+    border-bottom: none;
+}
+
+.about-list li i {
+    color: #d4af37;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+/* Badge Visi Misi */
+.vismis-box .badge {
+    display: inline-block;
+    background: #2c3e50;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================
+   LAYANAN KAMI SECTION (GRID BAWAH)
+   ========================================== */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center; /* Khusus card layanan ikon dibuat center agar estetik */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-bottom: 3px solid #d4af37;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
 </section>
 
 /* PRODUK */
