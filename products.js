@@ -85,7 +85,7 @@ id:"jokpaten-innova",
 nama:"Jok Paten Innova",
 kategori:"Jok Paten",
 harga:"Rp4.500.000",
-gambar:"img/jokpaten-innova.jpg",
+gambar:"innova.jpeg",
 deskripsi:"Jok paten premium untuk Toyota Innova."
 },
 
