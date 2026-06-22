@@ -23,7 +23,7 @@ id:"sarung-brio",
 nama:"Sarung Jok Brio",
 kategori:"Sarung Jok",
 harga:"Rp1.400.000",
-gambar:"img/pnk.jpg",
+gambar:"berbie.jpeg",
 deskripsi:"Sarung jok premium untuk Honda Brio."
 },
 
