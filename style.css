@@ -432,30 +432,73 @@ body{
 
 /* TESTIMONI */
 
-.testimonial-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: left; /* Biar teks rata kiri seperti Google Review */
 }
 
-.testimonial-card{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+/* Header: Isinya Foto/Inisial + Info Nama */
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
-.testimonial-card h4{
-    color:#f1b400;
-    margin-bottom:10px;
+/* Desain Bulatan Inisial */
+.avatar-initials {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 12px;
+    flex-shrink: 0;
 }
 
-.testimonial-card span{
-    display:block;
-    margin-top:15px;
-    font-weight:bold;
+/* Variasi Warna Background Bulatan (Biar Estetik & Beda-beda) */
+.bg-budi { background-color: #4A90E2; } /* Biru */
+.bg-andi { background-color: #E67E22; } /* Oranye */
+
+/* Detail Nama dan Bintang */
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+.user-name {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+.user-meta {
+    font-size: 12px;
+    color: #777777;
+    margin: 2px 0;
+}
+.verified-tag {
+    color: #2ECC71; /* Warna hijau penanda verified */
+    font-weight: 500;
+}
+.stars {
+    color: #F1C40F; /* Warna kuning emas untuk bintang */
+    font-size: 14px;
 }
 
+/* Teks Review di Bawah */
+.testimonial-text {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+}
 /* KONTAK */
 
 #kontak{
