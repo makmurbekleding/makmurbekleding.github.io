@@ -373,56 +373,64 @@
         </div> <!-- Penutup testimonial-grid -->
 
     </div>
-</section>
+    </section>
+    
+<!-- KONTAK UTAMA MODERN -->
 <section id="kontak" class="section bg-light">
     <div class="container">
         <h2>Hubungi Kami</h2>
         
         <div class="contact-wrapper">
+            <!-- KOLOM 1: Form Pesan (Hubungkan ke WhatsApp) -->
             <div class="contact-form-box">
                 <h3>Kirim Pesan</h3>
-                <form action="#" class="modern-form">
+                <form id="waForm" class="modern-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="text" id="waNama" placeholder="Nama Lengkap" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Alamat Email" required>
+                        <input type="text" id="waMobil" placeholder="Tipe / Jenis Mobil (Contoh: Avanza 2023)" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Pesan Anda atau Detail Kendaraan..." rows="5" required></textarea>
+                        <textarea id="waPesan" placeholder="Pesan Anda atau Detail Kerusakan/Request..." rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Kirim Sekarang <i class="fas fa-paper-plane"></i></button>
+                    <!-- Mengubah type menjadi button agar diproses oleh JavaScript ke WA -->
+                    <button type="button" class="btn-submit" onclick="kirimKeWhatsApp()">Kirim Sekarang <i class="fab fa-whatsapp"></i></button>
                 </form>
             </div>
 
+            <!-- KOLOM 2: Info Detail Kontak (Klik Langsung Mengarah) -->
             <div class="contact-info-box">
                 <h3>Informasi Kontak</h3>
                 <p class="contact-subtext">Silakan hubungi kami atau kunjungi workshop kami untuk konsultasi langsung mengenai bekleding mobil Anda.</p>
                 
                 <div class="info-cards">
-                    <div class="info-card">
+                    <!-- Card Telepon / WA -> Langsung Chat/Panggil -->
+                    <a href="https://wa.me/6281234567890" target="_blank" class="info-card">
                         <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
                         <div class="info-text">
                             <span>Telepon / WhatsApp</span>
                             <p>0812-3456-7890</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="info-card">
+                    <!-- Card Alamat -> Langsung buka Google Maps -->
+                    <a href="https://maps.google.com/?q=Jln.+M.H+Thamrin+Gg+Damai+Rt+04/010+No.+11+Cikokol+Tangerang" target="_blank" class="info-card">
                         <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="info-text">
                             <span>Workshop Kami</span>
                             <p>Jln. M.H Thamrin Gg Damai Rt 04/010 No. 11 Cikokol, Tangerang 15117</p>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="info-card">
+                    <!-- Card Email -> Langsung buka Aplikasi Email (Gmail/Outlook) -->
+                    <a href="mailto:makmurbekleding@gmail.com" class="info-card">
                         <div class="icon-circle"><i class="fas fa-envelope"></i></div>
                         <div class="info-text">
                             <span>Email Resmi</span>
                             <p>makmurbekleding@gmail.com</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
