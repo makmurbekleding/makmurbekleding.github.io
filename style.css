@@ -500,6 +500,8 @@ body{
 /* Variasi Warna Cerah Elegan */
 .bg-budi { background: linear-gradient(135deg, #4A90E2, #2c3e50); } 
 .bg-andi { background: linear-gradient(135deg, #E67E22, #d35400); }
+.bg-salman { background: linear-gradient(135deg, #2ECC71, #27ae60); } /* Warna Hijau Premium */
+.bg-faris { background: linear-gradient(135deg, #E74C3C, #c0392b); }  /* Warna Merah Premium */
 
 .user-info {
     display: flex;
